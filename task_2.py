@@ -50,7 +50,7 @@ inside_points = [point for point in points if point[1] <= f(point[0])]
 rect = (b - a) * f(b)  # Площа прямокутника
 monte_carlo = (len(inside_points) / N) * rect
 
-# Обчислення інтеграла pза допомогою quad
+# Обчислення інтеграла за допомогою quad
 result, error = spi.quad(f, a, b)
 
 print(f'Кількість випадкових точок: {N}')
